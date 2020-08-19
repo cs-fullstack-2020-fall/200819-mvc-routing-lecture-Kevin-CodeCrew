@@ -9,18 +9,18 @@ namespace mvcroutinglecture.Models
         public string title {get;set;}
         public string text {get;set;}
 
-        public BlogPost()
+        public BlogPost() // default no arg constructor
         {
-            
+
         }
-        public BlogPost(int id, string title, string text)
+        public BlogPost(int id, string title, string text) // main constructor
         {
             this.id = id;
             this.title = title;
             this.text = text;
         }
 
-        public List<BlogPost> getPosts() // get some test post data
+        public List<BlogPost> getPosts() // kludgy way get some test post data
         {
             List<BlogPost> posts = new List<BlogPost>();
             posts.Add(new BlogPost(10, "First Post!", "Here is my post"));
